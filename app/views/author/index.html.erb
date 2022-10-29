@@ -1,0 +1,6 @@
+<h2><%= @author.name %>'s info</h2>
+<br>
+<p>Bio : <%= @author.bio %></p>
+<p>Wikipedia : <%= link_to @author.link %></p>
+<br>
+<p><%= link_to 'See all quotes', author_quotes_path(name: @author.name)  %></p>

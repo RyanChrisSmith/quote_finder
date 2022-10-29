@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?fields=author&query=%22william%20c.%20menninger%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1137'
+      Etag:
+      - W/"471-2apjugySKRZLkawsMgLRVur8QUQ"
+      Date:
+      - Sat, 29 Oct 2022 16:07:04 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":3,"totalCount":3,"page":1,"totalPages":1,"lastItemIndex":null,"results":[{"_id":"EBX5NXqc-R6-","content":"Six
+        essential qualities that are the key to success: Sincerity, personal integrity,
+        humility, courtesy, wisdom, charity.","author":"William C. Menninger","tags":["success","life"],"authorId":"PyQOMX6cxaNs","authorSlug":"william-c-menninger","length":120,"dateAdded":"2019-01-08","dateModified":"2022-07-04"},{"_id":"6vrEW1dd1Q","content":"He
+        who is taught to live upon little owes more to his father''s wisdom than he
+        who has a great deal left him does to his father''s care.","author":"William
+        C. Menninger","tags":["wisdom"],"authorId":"PyQOMX6cxaNs","authorSlug":"william-c-menninger","length":134,"dateAdded":"2021-04-23","dateModified":"2021-04-23"},{"_id":"8ry084PzfT","content":"A
+        true friend freely, advises justly, assists readily, adventures boldly, takes
+        all patiently, defends courageously, and continues a friend unchangeably.","author":"William
+        C. Menninger","tags":["friendship"],"authorId":"PyQOMX6cxaNs","authorSlug":"william-c-menninger","length":153,"dateAdded":"2021-02-27","dateModified":"2021-02-27"}]}'
+  recorded_at: Sat, 29 Oct 2022 16:07:04 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,6 @@
+<h2><%= params[:name] %>'s quotes</h2>
+<br>
+<ul><% @quotes.each do |quote| %>
+<li>"<%= quote.content %>"</li>
+<% end  %></ul>
+

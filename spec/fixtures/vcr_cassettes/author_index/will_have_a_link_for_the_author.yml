@@ -1,0 +1,167 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?limit=10&query=love&sortBy=quoteCount
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2918'
+      Etag:
+      - W/"b66-MDhm4US+R57+fT7HdIbSJhg+Bmg"
+      Date:
+      - Sat, 29 Oct 2022 16:04:33 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudCI6MTAsInRvdGFsQ291bnQiOjEyMiwicGFnZSI6MSwidG90YWxQYWdlcyI6MTMsImxhc3RJdGVtSW5kZXgiOjEwLCJyZXN1bHRzIjpbeyJfaWQiOiJ4SDdYTl9fbTV5IiwiY29udGVudCI6IldlIGNhbiBvbmx5IGxlYXJuIHRvIGxvdmUgYnkgbG92aW5nLiIsImF1dGhvciI6IklyaXMgTXVyZG9jaCIsInRhZ3MiOlsiZmFtb3VzLXF1b3RlcyJdLCJhdXRob3JJZCI6InYySmsxckhjc0duZSIsImF1dGhvclNsdWciOiJpcmlzLW11cmRvY2giLCJsZW5ndGgiOjM2LCJkYXRlQWRkZWQiOiIyMDIwLTAxLTI2IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0wMS0yNiJ9LHsiX2lkIjoiTlp4NHZNd09DRHhKIiwiY29udGVudCI6IlRoZXJlIGlzIG9ubHkgb25lIGhhcHBpbmVzcyBpbiBsaWZlLCB0byBsb3ZlIGFuZCBiZSBsb3ZlZC4iLCJhdXRob3IiOiJHZW9yZ2UgU2FuZCIsInRhZ3MiOlsiZmFtb3VzLXF1b3RlcyJdLCJhdXRob3JJZCI6IjlYbGVGdUZMMm55YyIsImF1dGhvclNsdWciOiJnZW9yZ2Utc2FuZCIsImxlbmd0aCI6NTgsImRhdGVBZGRlZCI6IjIwMTktMTAtMTgiLCJkYXRlTW9kaWZpZWQiOiIyMDE5LTEwLTE4In0seyJfaWQiOiJYbWtWUC05YmxLIiwiY29udGVudCI6IkZyaWVuZHNoaXAgb2Z0ZW4gZW5kcyBpbiBsb3ZlLCBidXQgbG92ZSBpbiBmcmllbmRzaGlwIC0gbmV2ZXIuIiwiYXV0aG9yIjoiQWxiZXJ0IENhbXVzIiwidGFncyI6WyJmcmllbmRzaGlwIiwibG92ZSJdLCJhdXRob3JJZCI6IlJtdW9uWHJYWTQ0WiIsImF1dGhvclNsdWciOiJhbGJlcnQtY2FtdXMiLCJsZW5ndGgiOjYyLCJkYXRlQWRkZWQiOiIyMDIwLTEyLTA4IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0xMi0wOCJ9LHsiX2lkIjoiQTVsOHlDR080Qkw1IiwiY29udGVudCI6IkZvcmdpdmVuZXNzIGlzIGNob29zaW5nIHRvIGxvdmUuIEl0IGlzIHRoZSBmaXJzdCBza2lsbCBvZiBzZWxmLWdpdmluZyBsb3ZlLiIsImF1dGhvciI6Ik1haGF0bWEgR2FuZGhpIiwidGFncyI6WyJ3aXNkb20iXSwiYXV0aG9ySWQiOiI0SjZfZHg3M1liVDUiLCJhdXRob3JTbHVnIjoibWFoYXRtYS1nYW5kaGkiLCJsZW5ndGgiOjc1LCJkYXRlQWRkZWQiOiIyMDE5LTEyLTEzIiwiZGF0ZU1vZGlmaWVkIjoiMjAyMi0wNy0wNCJ9LHsiX2lkIjoiaWRLeUhZaUJrUCIsImNvbnRlbnQiOiJJIGxvdmUgd2lzZG9tLiBBbmQgeW91IGNhbiBuZXZlciBiZSBncmVhdCBhdCBhbnl0aGluZyB1bmxlc3MgeW91IGxvdmUgaXQuIE5vdCBiZSBpbiBsb3ZlIHdpdGggaXQsIGJ1dCBsb3ZlIHRoZSB0aGluZywgYWRtaXJlIHRoZSB0aGluZy4gQW5kIGl0IHNlZW1zIHRoYXQgaWYgeW91IGxvdmUgdGhlIHRoaW5nLCBhbmQgeW91IGRvbid0IGp1c3Qgd2FudCB0byBwb3NzZXNzIGl0LCBpdCB3aWxsIGZpbmQgeW91LiIsImF1dGhvciI6Ik1heWEgQW5nZWxvdSIsInRhZ3MiOlsid2lzZG9tIl0sImF1dGhvcklkIjoiRFBnaFg4emdKM0NRIiwiYXV0aG9yU2x1ZyI6Im1heWEtYW5nZWxvdSIsImxlbmd0aCI6MjMzLCJkYXRlQWRkZWQiOiIyMDIxLTAzLTA4IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMS0wMy0wOCJ9LHsiX2lkIjoiN3FNVEp4WlIxWlJGIiwiY29udGVudCI6IkdlbnVpbmUgbG92ZSBzaG91bGQgZmlyc3QgYmUgZGlyZWN0ZWQgYXQgb25lc2VsZjsgaWYgd2UgZG8gbm90IGxvdmUgb3Vyc2VsdmVzLCBob3cgY2FuIHdlIGxvdmUgb3RoZXJzPyIsImF1dGhvciI6IkRhbGFpIExhbWEiLCJ0YWdzIjpbImZhbW91cy1xdW90ZXMiXSwiYXV0aG9ySWQiOiJPUFZqdFZWQlZXNWgiLCJhdXRob3JTbHVnIjoiZGFsYWktbGFtYSIsImxlbmd0aCI6MTAyLCJkYXRlQWRkZWQiOiIyMDIwLTA0LTE0IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0wNC0xNCJ9LHsiX2lkIjoiTlpqT25MMVBpdSIsImNvbnRlbnQiOiJMb3ZlIGlzIHJhcmVyIHRoYW4gZ2VuaXVzIGl0c2VsZi4gQW5kIGZyaWVuZHNoaXAgaXMgcmFyZXIgdGhhbiBsb3ZlLiIsImF1dGhvciI6IkNoYXJsZXMgUMOpZ3V5IiwidGFncyI6WyJmcmllbmRzaGlwIiwibG92ZSJdLCJhdXRob3JJZCI6Ik5fY0Q1bGIwRS0iLCJhdXRob3JTbHVnIjoiY2hhcmxlcy1wZWd1eSIsImxlbmd0aCI6NjgsImRhdGVBZGRlZCI6IjIwMjAtMDEtMTUiLCJkYXRlTW9kaWZpZWQiOiIyMDIwLTAxLTE1In0seyJfaWQiOiJkd3lhT3lwRGlUMHQiLCJjb250ZW50IjoiTG92ZSBpc24ndCBzb21ldGhpbmcgeW91IGZpbmQuIExvdmUgaXMgc29tZXRoaW5nIHRoYXQgZmluZHMgeW91LiIsImF1dGhvciI6IkxvcmV0dGEgWW91bmciLCJ0YWdzIjpbImZhbW91cy1xdW90ZXMiXSwiYXV0aG9ySWQiOiJsUEpUYXpURmZDcXgiLCJhdXRob3JTbHVnIjoibG9yZXR0YS15b3VuZyIsImxlbmd0aCI6NjQsImRhdGVBZGRlZCI6IjIwMTktMDgtMDgiLCJkYXRlTW9kaWZpZWQiOiIyMDE5LTA4LTA4In0seyJfaWQiOiJQcmxmT1JVVzVrWm0iLCJjb250ZW50IjoiQmV0dGVyIHRvIGhhdmUgbG92ZWQgYW5kIGxvc3QsIHRoYW4gdG8gaGF2ZSBuZXZlciBsb3ZlZCBhdCBhbGwuIiwiYXV0aG9yIjoiQXVndXN0aW5lIG9mIEhpcHBvIiwidGFncyI6WyJmYW1vdXMtcXVvdGVzIl0sImF1dGhvcklkIjoiQ2dicW0zVHcxX0dDIiwiYXV0aG9yU2x1ZyI6ImF1Z3VzdGluZS1vZi1oaXBwbyIsImxlbmd0aCI6NjMsImRhdGVBZGRlZCI6IjIwMjEtMDEtMTAiLCJkYXRlTW9kaWZpZWQiOiIyMDIxLTAxLTEwIn0seyJfaWQiOiJEcC1aSjZXc21ZcXUiLCJjb250ZW50IjoiV2hlcmUgdGhlcmUgaXMgbG92ZSB0aGVyZSBpcyBsaWZlLiIsImF1dGhvciI6Ik1haGF0bWEgR2FuZGhpIiwidGFncyI6WyJ3aXNkb20iXSwiYXV0aG9ySWQiOiI0SjZfZHg3M1liVDUiLCJhdXRob3JTbHVnIjoibWFoYXRtYS1nYW5kaGkiLCJsZW5ndGgiOjM0LCJkYXRlQWRkZWQiOiIyMDIwLTAyLTI3IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMi0wNy0wNCJ9XX0=
+  recorded_at: Sat, 29 Oct 2022 16:04:33 GMT
+- request:
+    method: get
+    uri: https://api.quotable.io/search/authors?query=Iris%20Murdoch
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '546'
+      Etag:
+      - W/"222-Q5F74LSE5Y3Ith6mjnUAgvkBIxE"
+      Date:
+      - Sat, 29 Oct 2022 16:04:33 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudCI6MSwidG90YWxDb3VudCI6MSwicGFnZSI6MSwidG90YWxQYWdlcyI6MSwibGFzdEl0ZW1JbmRleCI6bnVsbCwicmVzdWx0cyI6W3siX2lkIjoidjJKazFySGNzR25lIiwibmFtZSI6IklyaXMgTXVyZG9jaCIsImxpbmsiOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9JcmlzX011cmRvY2giLCJiaW8iOiJEYW1lIEplYW4gSXJpcyBNdXJkb2NoICAoMTUgSnVseSAxOTE5IOKAkyA4IEZlYnJ1YXJ5IDE5OTkpIHdhcyBhIEJyaXRpc2ggbm92ZWxpc3QgYW5kIHBoaWxvc29waGVyLiBNdXJkb2NoIGlzIGJlc3Qga25vd24gZm9yIGhlciBub3ZlbHMgYWJvdXQgZ29vZCBhbmQgZXZpbCwgc2V4dWFsIHJlbGF0aW9uc2hpcHMsIG1vcmFsaXR5LCBhbmQgdGhlIHBvd2VyIG9mIHRoZSB1bmNvbnNjaW91cy4iLCJkZXNjcmlwdGlvbiI6IklyaXNoIHdyaXRlciBhbmQgcGhpbG9zb3BoZXIiLCJxdW90ZUNvdW50IjoyLCJzbHVnIjoiaXJpcy1tdXJkb2NoIiwiZGF0ZUFkZGVkIjoiMjAyMC0xMi0wNiIsImRhdGVNb2RpZmllZCI6IjIwMjAtMTItMDYifV19
+  recorded_at: Sat, 29 Oct 2022 16:04:33 GMT
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?limit=10&query=love&sortBy=quoteCount
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2918'
+      Etag:
+      - W/"b66-MDhm4US+R57+fT7HdIbSJhg+Bmg"
+      Date:
+      - Sat, 29 Oct 2022 16:04:34 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudCI6MTAsInRvdGFsQ291bnQiOjEyMiwicGFnZSI6MSwidG90YWxQYWdlcyI6MTMsImxhc3RJdGVtSW5kZXgiOjEwLCJyZXN1bHRzIjpbeyJfaWQiOiJ4SDdYTl9fbTV5IiwiY29udGVudCI6IldlIGNhbiBvbmx5IGxlYXJuIHRvIGxvdmUgYnkgbG92aW5nLiIsImF1dGhvciI6IklyaXMgTXVyZG9jaCIsInRhZ3MiOlsiZmFtb3VzLXF1b3RlcyJdLCJhdXRob3JJZCI6InYySmsxckhjc0duZSIsImF1dGhvclNsdWciOiJpcmlzLW11cmRvY2giLCJsZW5ndGgiOjM2LCJkYXRlQWRkZWQiOiIyMDIwLTAxLTI2IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0wMS0yNiJ9LHsiX2lkIjoiTlp4NHZNd09DRHhKIiwiY29udGVudCI6IlRoZXJlIGlzIG9ubHkgb25lIGhhcHBpbmVzcyBpbiBsaWZlLCB0byBsb3ZlIGFuZCBiZSBsb3ZlZC4iLCJhdXRob3IiOiJHZW9yZ2UgU2FuZCIsInRhZ3MiOlsiZmFtb3VzLXF1b3RlcyJdLCJhdXRob3JJZCI6IjlYbGVGdUZMMm55YyIsImF1dGhvclNsdWciOiJnZW9yZ2Utc2FuZCIsImxlbmd0aCI6NTgsImRhdGVBZGRlZCI6IjIwMTktMTAtMTgiLCJkYXRlTW9kaWZpZWQiOiIyMDE5LTEwLTE4In0seyJfaWQiOiJYbWtWUC05YmxLIiwiY29udGVudCI6IkZyaWVuZHNoaXAgb2Z0ZW4gZW5kcyBpbiBsb3ZlLCBidXQgbG92ZSBpbiBmcmllbmRzaGlwIC0gbmV2ZXIuIiwiYXV0aG9yIjoiQWxiZXJ0IENhbXVzIiwidGFncyI6WyJmcmllbmRzaGlwIiwibG92ZSJdLCJhdXRob3JJZCI6IlJtdW9uWHJYWTQ0WiIsImF1dGhvclNsdWciOiJhbGJlcnQtY2FtdXMiLCJsZW5ndGgiOjYyLCJkYXRlQWRkZWQiOiIyMDIwLTEyLTA4IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0xMi0wOCJ9LHsiX2lkIjoiQTVsOHlDR080Qkw1IiwiY29udGVudCI6IkZvcmdpdmVuZXNzIGlzIGNob29zaW5nIHRvIGxvdmUuIEl0IGlzIHRoZSBmaXJzdCBza2lsbCBvZiBzZWxmLWdpdmluZyBsb3ZlLiIsImF1dGhvciI6Ik1haGF0bWEgR2FuZGhpIiwidGFncyI6WyJ3aXNkb20iXSwiYXV0aG9ySWQiOiI0SjZfZHg3M1liVDUiLCJhdXRob3JTbHVnIjoibWFoYXRtYS1nYW5kaGkiLCJsZW5ndGgiOjc1LCJkYXRlQWRkZWQiOiIyMDE5LTEyLTEzIiwiZGF0ZU1vZGlmaWVkIjoiMjAyMi0wNy0wNCJ9LHsiX2lkIjoiaWRLeUhZaUJrUCIsImNvbnRlbnQiOiJJIGxvdmUgd2lzZG9tLiBBbmQgeW91IGNhbiBuZXZlciBiZSBncmVhdCBhdCBhbnl0aGluZyB1bmxlc3MgeW91IGxvdmUgaXQuIE5vdCBiZSBpbiBsb3ZlIHdpdGggaXQsIGJ1dCBsb3ZlIHRoZSB0aGluZywgYWRtaXJlIHRoZSB0aGluZy4gQW5kIGl0IHNlZW1zIHRoYXQgaWYgeW91IGxvdmUgdGhlIHRoaW5nLCBhbmQgeW91IGRvbid0IGp1c3Qgd2FudCB0byBwb3NzZXNzIGl0LCBpdCB3aWxsIGZpbmQgeW91LiIsImF1dGhvciI6Ik1heWEgQW5nZWxvdSIsInRhZ3MiOlsid2lzZG9tIl0sImF1dGhvcklkIjoiRFBnaFg4emdKM0NRIiwiYXV0aG9yU2x1ZyI6Im1heWEtYW5nZWxvdSIsImxlbmd0aCI6MjMzLCJkYXRlQWRkZWQiOiIyMDIxLTAzLTA4IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMS0wMy0wOCJ9LHsiX2lkIjoiN3FNVEp4WlIxWlJGIiwiY29udGVudCI6IkdlbnVpbmUgbG92ZSBzaG91bGQgZmlyc3QgYmUgZGlyZWN0ZWQgYXQgb25lc2VsZjsgaWYgd2UgZG8gbm90IGxvdmUgb3Vyc2VsdmVzLCBob3cgY2FuIHdlIGxvdmUgb3RoZXJzPyIsImF1dGhvciI6IkRhbGFpIExhbWEiLCJ0YWdzIjpbImZhbW91cy1xdW90ZXMiXSwiYXV0aG9ySWQiOiJPUFZqdFZWQlZXNWgiLCJhdXRob3JTbHVnIjoiZGFsYWktbGFtYSIsImxlbmd0aCI6MTAyLCJkYXRlQWRkZWQiOiIyMDIwLTA0LTE0IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMC0wNC0xNCJ9LHsiX2lkIjoiTlpqT25MMVBpdSIsImNvbnRlbnQiOiJMb3ZlIGlzIHJhcmVyIHRoYW4gZ2VuaXVzIGl0c2VsZi4gQW5kIGZyaWVuZHNoaXAgaXMgcmFyZXIgdGhhbiBsb3ZlLiIsImF1dGhvciI6IkNoYXJsZXMgUMOpZ3V5IiwidGFncyI6WyJmcmllbmRzaGlwIiwibG92ZSJdLCJhdXRob3JJZCI6Ik5fY0Q1bGIwRS0iLCJhdXRob3JTbHVnIjoiY2hhcmxlcy1wZWd1eSIsImxlbmd0aCI6NjgsImRhdGVBZGRlZCI6IjIwMjAtMDEtMTUiLCJkYXRlTW9kaWZpZWQiOiIyMDIwLTAxLTE1In0seyJfaWQiOiJkd3lhT3lwRGlUMHQiLCJjb250ZW50IjoiTG92ZSBpc24ndCBzb21ldGhpbmcgeW91IGZpbmQuIExvdmUgaXMgc29tZXRoaW5nIHRoYXQgZmluZHMgeW91LiIsImF1dGhvciI6IkxvcmV0dGEgWW91bmciLCJ0YWdzIjpbImZhbW91cy1xdW90ZXMiXSwiYXV0aG9ySWQiOiJsUEpUYXpURmZDcXgiLCJhdXRob3JTbHVnIjoibG9yZXR0YS15b3VuZyIsImxlbmd0aCI6NjQsImRhdGVBZGRlZCI6IjIwMTktMDgtMDgiLCJkYXRlTW9kaWZpZWQiOiIyMDE5LTA4LTA4In0seyJfaWQiOiJQcmxmT1JVVzVrWm0iLCJjb250ZW50IjoiQmV0dGVyIHRvIGhhdmUgbG92ZWQgYW5kIGxvc3QsIHRoYW4gdG8gaGF2ZSBuZXZlciBsb3ZlZCBhdCBhbGwuIiwiYXV0aG9yIjoiQXVndXN0aW5lIG9mIEhpcHBvIiwidGFncyI6WyJmYW1vdXMtcXVvdGVzIl0sImF1dGhvcklkIjoiQ2dicW0zVHcxX0dDIiwiYXV0aG9yU2x1ZyI6ImF1Z3VzdGluZS1vZi1oaXBwbyIsImxlbmd0aCI6NjMsImRhdGVBZGRlZCI6IjIwMjEtMDEtMTAiLCJkYXRlTW9kaWZpZWQiOiIyMDIxLTAxLTEwIn0seyJfaWQiOiJEcC1aSjZXc21ZcXUiLCJjb250ZW50IjoiV2hlcmUgdGhlcmUgaXMgbG92ZSB0aGVyZSBpcyBsaWZlLiIsImF1dGhvciI6Ik1haGF0bWEgR2FuZGhpIiwidGFncyI6WyJ3aXNkb20iXSwiYXV0aG9ySWQiOiI0SjZfZHg3M1liVDUiLCJhdXRob3JTbHVnIjoibWFoYXRtYS1nYW5kaGkiLCJsZW5ndGgiOjM0LCJkYXRlQWRkZWQiOiIyMDIwLTAyLTI3IiwiZGF0ZU1vZGlmaWVkIjoiMjAyMi0wNy0wNCJ9XX0=
+  recorded_at: Sat, 29 Oct 2022 16:04:34 GMT
+- request:
+    method: get
+    uri: https://api.quotable.io/search/authors?query=Iris%20Murdoch
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '546'
+      Etag:
+      - W/"222-Q5F74LSE5Y3Ith6mjnUAgvkBIxE"
+      Date:
+      - Sat, 29 Oct 2022 16:04:34 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudCI6MSwidG90YWxDb3VudCI6MSwicGFnZSI6MSwidG90YWxQYWdlcyI6MSwibGFzdEl0ZW1JbmRleCI6bnVsbCwicmVzdWx0cyI6W3siX2lkIjoidjJKazFySGNzR25lIiwibmFtZSI6IklyaXMgTXVyZG9jaCIsImxpbmsiOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9JcmlzX011cmRvY2giLCJiaW8iOiJEYW1lIEplYW4gSXJpcyBNdXJkb2NoICAoMTUgSnVseSAxOTE5IOKAkyA4IEZlYnJ1YXJ5IDE5OTkpIHdhcyBhIEJyaXRpc2ggbm92ZWxpc3QgYW5kIHBoaWxvc29waGVyLiBNdXJkb2NoIGlzIGJlc3Qga25vd24gZm9yIGhlciBub3ZlbHMgYWJvdXQgZ29vZCBhbmQgZXZpbCwgc2V4dWFsIHJlbGF0aW9uc2hpcHMsIG1vcmFsaXR5LCBhbmQgdGhlIHBvd2VyIG9mIHRoZSB1bmNvbnNjaW91cy4iLCJkZXNjcmlwdGlvbiI6IklyaXNoIHdyaXRlciBhbmQgcGhpbG9zb3BoZXIiLCJxdW90ZUNvdW50IjoyLCJzbHVnIjoiaXJpcy1tdXJkb2NoIiwiZGF0ZUFkZGVkIjoiMjAyMC0xMi0wNiIsImRhdGVNb2RpZmllZCI6IjIwMjAtMTItMDYifV19
+  recorded_at: Sat, 29 Oct 2022 16:04:34 GMT
+recorded_with: VCR 6.1.0

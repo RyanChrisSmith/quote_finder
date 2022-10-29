@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe QuotePoro do
-  it 'will return only the info needed' do
+  it 'will return only the info needed', :vcr do
     quotes = QuoteService.search_by_input("extreme love")
 
     quote_data = quotes[:results].first

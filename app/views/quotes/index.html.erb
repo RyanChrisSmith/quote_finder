@@ -4,8 +4,8 @@
 <br>
 <p>Top 10 quotes:</p>
 <ol><% @quotes.each do |quote| %>
-  <li><p>Quote - <%= quote.content %></p></li>
-  <p><strong>Author - <%= quote.author %></strong></p>
+  <li><p>Quote - "<%= quote.content %>"</p></li>
+  <p><strong>Author - <%= link_to quote.author, author_index_path(name: quote.author) %></strong></p>
   <p>Categories: <% quote.categories.each do |category| %> </p>
     <p>* <%= category %></p>
   <% end %>

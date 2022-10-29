@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/authors?query=William%20C.%20Menninger
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '582'
+      Etag:
+      - W/"246-ofT3BlbAztjO97RGwKAGi/rqbog"
+      Date:
+      - Sat, 29 Oct 2022 16:07:28 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudCI6MSwidG90YWxDb3VudCI6MSwicGFnZSI6MSwidG90YWxQYWdlcyI6MSwibGFzdEl0ZW1JbmRleCI6bnVsbCwicmVzdWx0cyI6W3siX2lkIjoiUHlRT01YNmN4YU5zIiwibmFtZSI6IldpbGxpYW0gQy4gTWVubmluZ2VyIiwibGluayI6Imh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL1dpbGxpYW1fQy5fTWVubmluZ2VyIiwiYmlvIjoiV2lsbGlhbSBDbGFpcmUgTWVubmluZ2VyICAoT2N0b2JlciAxNSwgMTg5OSDigJMgU2VwdGVtYmVyIDYsIDE5NjYpICB3YXMgYSBjby1mb3VuZGVyIHdpdGggaGlzIGJyb3RoZXIgS2FybCBhbmQgaGlzIGZhdGhlciBvZiBUaGUgTWVubmluZ2VyIEZvdW5kYXRpb24gaW4gVG9wZWthLCBLYW5zYXMsIGFuIGludGVybmF0aW9uYWxseSBrbm93biBjZW50ZXIgZm9yIHRyZWF0bWVudCBvZiBiZWhhdmlvcmFsIGRpc29yZGVycy4iLCJkZXNjcmlwdGlvbiI6IkthcmwgTWVubmluZ2VyJ3MgYnJvdGhlciIsInF1b3RlQ291bnQiOjMsInNsdWciOiJ3aWxsaWFtLWMtbWVubmluZ2VyIiwiZGF0ZUFkZGVkIjoiMjAyMS0wNC0yMyIsImRhdGVNb2RpZmllZCI6IjIwMjEtMDQtMjMifV19
+  recorded_at: Sat, 29 Oct 2022 16:07:28 GMT
+recorded_with: VCR 6.1.0

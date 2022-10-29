@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?limit=10&query=I%20am&sortBy=quoteCount
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2980'
+      Etag:
+      - W/"ba4-MdVCV9Z1CY4+VQZaoELf97u+0nU"
+      Date:
+      - Sat, 29 Oct 2022 16:06:07 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":10,"totalCount":151,"page":1,"totalPages":16,"lastItemIndex":10,"results":[{"_id":"OHNMF1vCnPFE","content":"If
+        I am not for myself, who will be for me? If I am not for others, what am I?
+        And if not now, when?","author":"Rabbi Hillel","tags":["famous-quotes","wisdom"],"authorId":"cII2_MfYV9sI","authorSlug":"rabbi-hillel","length":100,"dateAdded":"2019-01-08","dateModified":"2022-07-04"},{"_id":"uQwITry_sQQv","content":"I
+        am not bothered by the fact that I am unknown. I am bothered when I do not
+        know others.","author":"Confucius","tags":["wisdom"],"authorId":"ropvZKOXYhLr","authorSlug":"confucius","length":89,"dateAdded":"2020-02-22","dateModified":"2022-07-04"},{"_id":"Vs-4YEGn","content":"I
+        can, therefore I am.","author":"Simone Weil","tags":["inspirational"],"authorId":"bUP0cHEuKQBn","authorSlug":"simone-weil","length":22,"dateAdded":"2020-03-11","dateModified":"2020-03-11"},{"_id":"DvEuabi2lH8","content":"I
+        think and that is all that I am.","author":"Wayne Dyer","tags":["famous-quotes"],"authorId":"CLxflG5QMMjg","authorSlug":"wayne-dyer","length":34,"dateAdded":"2020-07-10","dateModified":"2020-07-10"},{"_id":"cgBH5dPFK-jC","content":"I
+        care not so much what I am to others as what I am to myself. I will be rich
+        by myself, and not by borrowing.","author":"Michel de Montaigne","tags":["famous-quotes"],"authorId":"B2lKC8XK8Dh7","authorSlug":"michel-de-montaigne","length":110,"dateAdded":"2021-04-08","dateModified":"2021-04-08"},{"_id":"wPJ_Mb4EjPlE","content":"Mind
+        is everything: muscle, pieces of rubber. All that I am, I am because of my
+        mind.","author":"Paavo Nurmi","tags":["famous-quotes"],"authorId":"SckF0U8Iy85M","authorSlug":"paavo-nurmi","length":85,"dateAdded":"2019-12-13","dateModified":"2019-12-13"},{"_id":"nZtnCW3_6S","author":"Abraham
+        Lincoln","content":"I am not bound to win, but I am bound to be true. I am
+        not bound to succeed, but I am bound to live by the light that I have. I must
+        stand with anybody that stands right, and stand with him while he is right,
+        and part with him when he goes wrong.","tags":["inspirational","history","truth"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":246,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"0mvbtxiIrRtQ","content":"When
+        I let go of what I am, I become what I might be.","author":"Laozi","tags":["wisdom"],"authorId":"qsaptKSHuLDU","authorSlug":"laozi","length":53,"dateAdded":"2021-01-19","dateModified":"2022-07-04"},{"_id":"JBJV1OZ3ARcw","content":"I
+        have no special talent. I am only passionately curious.","author":"Albert
+        Einstein","tags":["famous-quotes"],"authorId":"L76FRuEeGIUJ","authorSlug":"albert-einstein","length":57,"dateAdded":"2020-02-07","dateModified":"2020-02-07"},{"_id":"ubJ9lY7Ark","author":"Abraham
+        Lincoln","content":"All that I am, or hope to be, I owe to my angel mother.","tags":["family"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":55,"dateAdded":"2022-03-12","dateModified":"2022-03-12"}]}'
+  recorded_at: Sat, 29 Oct 2022 16:06:07 GMT
+recorded_with: VCR 6.1.0
